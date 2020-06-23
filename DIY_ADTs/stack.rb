@@ -1,3 +1,4 @@
+# Excercise 1: Write a Stack class!
 class Stack
     def initialize
         @stack = Array.new()
@@ -20,6 +21,12 @@ class Stack
 
     private
     attr_accessor :stack
+end
+
+# Excercise 2: Write a Queue class!
+
+class Queue
+    
 end
 
 if __FILE__ == $PROGRAM_NAME
