@@ -23,17 +23,12 @@ class Stack
     attr_accessor :stack
 end
 
-# Excercise 2: Write a Queue class!
-
-class Queue
-    
-end
-
 if __FILE__ == $PROGRAM_NAME
-    my_stack = Stack.new()
+    my_stack = Stack.new
     my_stack.push(1)
-    my_stack.push(5)
-    my_stack.push(3)
+    my_stack.push(4)
+    my_stack.push(2)
+    puts my_stack.peek
     my_stack.pop
     puts my_stack.peek
 end
