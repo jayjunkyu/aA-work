@@ -17,7 +17,7 @@ class Searchable
     def bfs(target_value)
         queue = []
         queue << self
-
+        # test commit
         while queue.length > 0
             curr_node = queue.shift
 
