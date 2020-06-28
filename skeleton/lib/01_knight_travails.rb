@@ -6,6 +6,7 @@ require 'byebug'
 class KnightPathFinder
     attr_reader :root_node
 
+    # possible moves of a knight on a chessboard
     MOVES = [
         [-2, 1],
         [-2, -1],
@@ -24,8 +25,8 @@ class KnightPathFinder
         build_move_tree(@root_node)
     end
 
-    def build_move_tree(node)
-        queue = [node]
+    def build_move_tree(node)  # building all possible subsequence moves from start_pos
+        queue = [node]  # using a queue do build a tree in a BFS manner
 
         while !queue.empty?
             curr_node = queue.shift
