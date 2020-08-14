@@ -40,9 +40,9 @@ class Manager < Employee
     def total_subsalary
         total_subsalary = 0
         self.employees.each do |employee|
-            if employee.is_a?(Manager)
+            if employee.is_a?(Manager)  # if object is a Manager, call its total_subsalary
                 total_subsalary += employee.salary + employee.total_subsalary
-            else
+            else  # add employee salary if object is a normal employee
                 total_subsalary += employee.salary
             end
         end
